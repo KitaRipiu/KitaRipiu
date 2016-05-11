@@ -1,0 +1,16 @@
+.margin-top-2
+{
+    margin-top: 2rem;
+}
+.textoverflow {
+    -webkit-line-clamp : 2;
+    -o-line-clamp : 2;
+    -moz-line-clamp : 2;
+    -ms-line-clamp : 2;
+    text-overflow: ellipsis;
+    
+}
+.font1rem
+{
+ font-size: 50px;  
+}
