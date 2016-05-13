@@ -1,16 +1,70 @@
-.margin-top-2
-{
-    margin-top: 2rem;
+.ui.inverted.header{
+	margin-top:5em;
+
 }
-.textoverflow {
-    -webkit-line-clamp : 2;
-    -o-line-clamp : 2;
-    -moz-line-clamp : 2;
-    -ms-line-clamp : 2;
-    text-overflow: ellipsis;
-    
+
+
+
+
+@media only screen and (min-width: 721px) {
+
+	.secondary.pointing.menu .toc.item {
+	        display: none !important;
+	      }
+
 }
-.font1rem
+@media only screen and (max-width: 720px) {
+      .ui.fixed.menu {
+        display: none !important;
+        position: fixed;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+
+      h4.ui.inverted.header{
+        margin-top: 0.2em;
+      }
+
+    }
+
+
+
+.four.wide.column
 {
- font-size: 50px;  
+    position: fixed;
+    height: auto;
+    width: 100%;
+    z-index: 100
+}
+
+.ui.two.column.grid
+{
+  margin-top: 1em;
+}
+
+.ui.relaxed.divided.list
+{
+  margin: 0.5em;
+}
+
+
+.ui.inverted.vertical.footer.segment
+{
+  margin-top: 2em;
 }
