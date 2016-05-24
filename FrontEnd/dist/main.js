@@ -21,3 +21,10 @@ $(document)
 
     })
   ;
+
+
+
+
+$('.test.modal')
+  .modal('attach events', '#showsearch', 'show')
+;
