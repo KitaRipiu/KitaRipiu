@@ -29,7 +29,7 @@
                 <a class="active item">Home</a>
                 <a class="item">Compare</a>
                 <a class="item">About</a>
-                <a class="right item" id="showsearch">
+                <a class="right item" id="showsearch1">
                     <i class="search icon"></i> Search
                 </a>
             </div>
@@ -45,7 +45,7 @@
                     <a class="active item">Home</a>
                     <a class="item">Compare</a>
                     <a class="item">About</a>
-                    <a class="right item" id="showsearch">
+                    <a class="right item" id="showsearch2">
                         <i class="search icon"></i> Search
                     </a>
                 </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <button class="">Teal</button>
+            <button class="ui inverted blue button">Versus</button>
  
         </div>
 
@@ -82,7 +82,7 @@
             <a class="active item">Home</a>
             <a class="item">Compare</a>
             <a class="item">About</a>
-            <a class="right item" id="showsearch">
+            <a class="right item" id="showsearch3">
                 <i class="search icon"></i>Search
             </a>
         </div>
@@ -390,7 +390,7 @@
 
 
     <!-- modal -->
-    <div class="ui small modal transition visible active" style="margin-top: -213px; display: block !important;">
+    <div class="ui modal">
         <i class="close icon"></i>
         <div class="header">
             KitaRipiu
@@ -400,12 +400,15 @@
                 <h4 class="ui dividing header">Search Phone</h4>
                 <div class="ui icon input">
                     <input type="text" placeholder="Search..."></input>
-                    <i class="search icon"></i>
+                    <div class="ui vertical green animated button" tabindex="0">
+                          <div class="hidden content">Search</div>
+                          <div class="visible content">
+                            <i class="search icon"></i>
+                          </div>
+                    </div>
+
                 </div>
-                <button class="ui green button">
-                    <i class="icon search"></i>
-                    Search
-                </button>
+                
             </div>
             
 
@@ -413,7 +416,7 @@
         
   </div>
   <!-- /modal -->
-
+    
     <script type="text/javascript" src="./dist/jquery.min.js"></script>
     <script type="text/javascript" src="./dist/semantic.min.js"></script>
     <script type="text/javascript" src="./dist/main.js"></script>

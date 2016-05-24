@@ -22,9 +22,14 @@ $(document)
     })
   ;
 
+$("#showsearch1").click(function () {
+            $('.ui.modal').modal('show');
+        });
 
+$("#showsearch2").click(function () {
+            $('.ui.modal').modal('show');
+        });
 
-
-$('.test.modal')
-  .modal('attach events', '#showsearch', 'show')
-;
+$("#showsearch3").click(function () {
+            $('.ui.modal').modal('show');
+        });
