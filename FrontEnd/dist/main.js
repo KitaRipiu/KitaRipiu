@@ -1,3 +1,7 @@
+$('.menu .item')
+  .tab()
+;
+
 $(document)
     .ready(function() {
 
