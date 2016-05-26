@@ -2,6 +2,10 @@
 	margin-top:5em;
 
 }
+.ui.fluid.card img {
+    height: 6em;
+    
+}
 .review {
     width: 30em!important;
     text-align: center!important;
