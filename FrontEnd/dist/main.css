@@ -6,9 +6,11 @@
     height: 6em;
     
 }
+.versus {
+    width: 20em;
+}
 .review {
-    width: 30em!important;
-    text-align: center!important;
+    width: 25em!important;
     
 }
 .ui.inverted.segment,.ui.inverted.sidebar
@@ -48,6 +50,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182a73', end
 
 }
 @media only screen and (max-width: 720px) {
+    .versus {
+    width: 15em;
+    }
+    .review {
+    width: 15em!important;
+    
+    }
     
     .ui.column.grid>[class*="four wide"].column, .ui.grid>.column.row>[class*="four wide"].column, .ui.grid>.row>[class*="four wide"].column, .ui.grid>[class*="four wide"].column {
         width: 40%!important;
@@ -56,6 +65,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182a73', end
     .ui.column.grid>[class*="twelve wide"].column, .ui.grid>.column.row>[class*="twelve wide"].column, .ui.grid>.row>[class*="twelve wide"].column, .ui.grid>[class*="twelve wide"].column {
         width: 60%!important;
     }
+    
+    .ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
+    width: 100%!important;
+}
     
     
       .ui.fixed.menu {
