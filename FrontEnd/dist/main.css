@@ -2,7 +2,11 @@
 	margin-top:5em;
 
 }
-
+.review {
+    width: 30em!important;
+    text-align: center!important;
+    
+}
 .ui.inverted.segment,.ui.inverted.sidebar
 {
 background: rgb(24,42,115);
