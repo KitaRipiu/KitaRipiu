@@ -37,3 +37,5 @@ $("#showsearch2").click(function () {
 $("#showsearch3").click(function () {
             $('.ui.modal').modal('show');
         });
+
+$('.ui.embed').embed();
