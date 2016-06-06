@@ -20,3 +20,5 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 kadira:flow-router
 semantic:ui
 flemay:less-autoprefixer
+kadira:react-layout
+react
