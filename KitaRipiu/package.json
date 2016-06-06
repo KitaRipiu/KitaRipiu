@@ -1,18 +1,11 @@
 {
   "name": "kitaripiu",
   "private": true,
+  "version": "1.0.0",
+  "description": "Smartphones review and comparison",
+  "main": "index.js",
   "scripts": {
     "start": "meteor run"
-  },
-  "eslintConfig": {
-    "plugins": [
-      "meteor"
-    ],
-    "extends": [
-      "airbnb",
-      "plugin:meteor/recommended"
-    ],
-    "rules": {}
   },
   "dependencies": {
     "hover.css": "^2.0.2",
@@ -21,9 +14,6 @@
     "react-dom": "^15.1.0",
     "react-mounter": "^1.2.0"
   },
-  "version": "1.0.0",
-  "description": "Smartphones review and comparison",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/riskteria/KitaRipiu.git"
@@ -38,6 +28,5 @@
   "bugs": {
     "url": "https://github.com/riskteria/KitaRipiu/issues"
   },
-  "homepage": "https://github.com/riskteria/KitaRipiu#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/riskteria/KitaRipiu#readme"
 }
