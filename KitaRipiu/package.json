@@ -2,9 +2,7 @@
   "name": "kitaripiu",
   "private": true,
   "scripts": {
-    "start": "meteor run",
-    "lint": "eslint .",
-    "pretest": "npm run lint --silent"
+    "start": "meteor run"
   },
   "eslintConfig": {
     "plugins": [
@@ -18,7 +16,9 @@
   },
   "dependencies": {
     "hover.css": "^2.0.2",
-    "meteor-node-stubs": "~0.2.0"
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
   },
   "version": "1.0.0",
   "description": "Smartphones review and comparison",
@@ -38,6 +38,5 @@
     "url": "https://github.com/riskteria/KitaRipiu/issues"
   },
   "homepage": "https://github.com/riskteria/KitaRipiu#readme",
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
