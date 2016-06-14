@@ -1,0 +1,21 @@
+<template name="PublicLayout">
+
+	<div class="pusher">
+
+		<!-- Navigation Bar Section
+    		============================ -->
+		{{> NavSection }}
+
+		<!-- This is the main layout to load every pages dinamically
+    		============================ -->
+		<main class="main-layout">
+			{{> Template.dynamic template=main }}
+		</main>
+
+		<!-- Footer Section
+    		============================ -->
+		{{> FooterSection }}
+
+	</div>
+
+</template>
