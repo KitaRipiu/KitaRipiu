@@ -23,3 +23,5 @@ quackware:amazon-product-api
 meteorhacks:flow-router
 meteorhacks:flow-layout
 kadira:blaze-layout
+accounts-ui
+accounts-password
