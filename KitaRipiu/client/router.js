@@ -10,6 +10,9 @@ publicRoute.route('/',
 // Smartphone route
 publicRoute.route('/smartphone',
   { name: 'Smartphone', action: renderView });
+  // Versus route
+publicRoute.route('/versus',
+  { name: 'Versus', action: renderView });
 // Read article route
 publicRoute.route('/read/:article',
   { name: 'Read',       action: renderView });
