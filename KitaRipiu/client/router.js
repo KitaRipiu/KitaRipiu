@@ -14,10 +14,10 @@ publicRoute.route('/smartphone',
 publicRoute.route('/versus',
   { name: 'Versus', action: renderView });
   // Review route
-publicRoute.route('/Review',
+publicRoute.route('/review',
   { name: 'Review', action: renderView });
   // News route
-publicRoute.route('/News',
+publicRoute.route('/news',
   { name: 'News', action: renderView });
 // Read article route
 publicRoute.route('/read/:article',
@@ -25,6 +25,13 @@ publicRoute.route('/read/:article',
 // Login route
 publicRoute.route('/login',
   { name: 'Login',      action: renderView });
+  
+// 404 Page
+FlowRouter.notFound = {
+  action: function(){
+    BlazeLayout.render("404");
+  }
+};
 
 function renderView() {
   renderMainLayoutWith(this.name);
