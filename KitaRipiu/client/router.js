@@ -16,6 +16,9 @@ publicRoute.route('/versus',
   // Review route
 publicRoute.route('/Review',
   { name: 'Review', action: renderView });
+  // News route
+publicRoute.route('/News',
+  { name: 'News', action: renderView });
 // Read article route
 publicRoute.route('/read/:article',
   { name: 'Read',       action: renderView });
