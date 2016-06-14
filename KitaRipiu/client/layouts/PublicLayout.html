@@ -1,25 +1,54 @@
+<head>
+	<!-- Behavioral Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="KitaRipiu" />
+	<meta charset="utf-8" />
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="KitaRipiu">
+	<meta name="description" content="" />
+	<meta name="keywords" content="Review, Smartphone, Comparison" />
+	<meta name="robots" content="index, follow">
+	<meta name="revisit-after" content="3 month">
+	<meta name="language" content="indonesia, english" />
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" href="/resources/favicon.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/resources/favicon.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/resources/favicon.png" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/resources/favicon.png" />
+
+	<meta http-equiv="Content-Language" content="en-us,id" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>KitaRipiu : Smartphone Review and Comparison</title>
+
+	<!-- Icon -->
+	<link rel="icon" href="/resources/favicon.png">
+
+</head>
+
 <template name="PublicLayout">
 
 	<div class="pusher">
 
 		<!-- Navigation Bar Section
-    		============================ -->
+		============================ -->
 		{{> NavSection }}
 
 		<!-- This is the main layout to load every pages dinamically
-    		============================ -->
+		============================ -->
 		<main class="main-layout">
 			{{> Template.dynamic template=main }}
 		</main>
 
 		<!-- Footer Section
-    		============================ -->
+		============================ -->
 		{{> FooterSection }}
 
-		
 	</div>
-	{{> modal}}
-
-
+	{{> Modal}}
 
 </template>
