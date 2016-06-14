@@ -1,127 +1,107 @@
-.ui.inverted.header{
-	margin-top:5em;
-
+.ui.inverted.header {
+    margin-top: 5em;
 }
 .ui.fluid.card img {
     height: 6em;
-    
 }
 .versus {
     width: 20em;
 }
 .review {
     width: 25em!important;
-    
 }
-.ui.inverted.segment,.ui.inverted.sidebar,.login
-{
-background: rgb(24,42,115);
-background: -moz-linear-gradient(-45deg,  rgba(24,42,115,1) 0%, rgba(33,138,174,1) 69%, rgba(32,167,172,1) 89%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(24,42,115,1)), color-stop(69%,rgba(33,138,174,1)), color-stop(89%,rgba(32,167,172,1)));
-background: -webkit-linear-gradient(-45deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
-background: -o-linear-gradient(-45deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
-background: -ms-linear-gradient(-45deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
-background: linear-gradient(135deg,  rgba(24,42,115,1) 0%,rgba(33,138,174,1) 69%,rgba(32,167,172,1) 89%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182a73', endColorstr='#20a7ac',GradientType=1 );
+.ui.inverted.segment, .ui.inverted.sidebar, .login {
+    background: rgb(24, 42, 115);
+    background: -moz-linear-gradient(-45deg, rgba(24, 42, 115, 1) 0%, rgba(33, 138, 174, 1) 69%, rgba(32, 167, 172, 1) 89%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(24, 42, 115, 1)), color-stop(69%, rgba(33, 138, 174, 1)), color-stop(89%, rgba(32, 167, 172, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(24, 42, 115, 1) 0%, rgba(33, 138, 174, 1) 69%, rgba(32, 167, 172, 1) 89%);
+    background: -o-linear-gradient(-45deg, rgba(24, 42, 115, 1) 0%, rgba(33, 138, 174, 1) 69%, rgba(32, 167, 172, 1) 89%);
+    background: -ms-linear-gradient(-45deg, rgba(24, 42, 115, 1) 0%, rgba(33, 138, 174, 1) 69%, rgba(32, 167, 172, 1) 89%);
+    background: linear-gradient(135deg, rgba(24, 42, 115, 1) 0%, rgba(33, 138, 174, 1) 69%, rgba(32, 167, 172, 1) 89%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#182a73', endColorstr='#20a7ac', GradientType=1);
 }
-
-.ui.inverted.link.list .item{
-  text-align: center;
+.ui.inverted.link.list .item {
+    text-align: center;
 }
-
-.ui.inverted.white.button.margintop1
-{
-  margin-top: 1em;
-  padding-left: 4em;
-  padding-right: 4em;
+.ui.inverted.white.button.margintop1 {
+    margin-top: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
-
-
+.login {
+    height: 100vh;
+}
+.login > .grid {
+    height: 100%;
+}
+.image {
+    margin-top: -100px;
+}
+.column {
+    max-width: 450px;
+}
 @media only screen and (min-width: 721px) {
-
-	.secondary.pointing.menu .toc.item {
-	        display: none !important;
-	      }
-   h4{
-     margin: 1em;
-     color: #fff;
-   }
-   
-
+    .secondary.pointing.menu .toc.item {
+        display: none !important;
+    }
+    h4 {
+        margin: 1em;
+        color: #fff;
+    }
 }
 @media only screen and (max-width: 720px) {
     .versus {
-    width: 15em;
+        width: 15em;
     }
     .review {
-    width: 15em!important;
-    
+        width: 15em!important;
     }
-    
     .ui.column.grid>[class*="four wide"].column, .ui.grid>.column.row>[class*="four wide"].column, .ui.grid>.row>[class*="four wide"].column, .ui.grid>[class*="four wide"].column {
         width: 40%!important;
     }
-        
     .ui.column.grid>[class*="twelve wide"].column, .ui.grid>.column.row>[class*="twelve wide"].column, .ui.grid>.row>[class*="twelve wide"].column, .ui.grid>[class*="twelve wide"].column {
         width: 60%!important;
     }
-    
     .ui.column.grid>[class*="seven wide"].column, .ui.grid>.column.row>[class*="seven wide"].column, .ui.grid>.row>[class*="seven wide"].column, .ui.grid>[class*="seven wide"].column {
-    width: 100%!important;
-}
-    
-    
-      .ui.fixed.menu {
+        width: 100%!important;
+    }
+    .ui.fixed.menu {
         display: none !important;
         position: fixed;
-      }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
+    }
+    .secondary.pointing.menu .item, .secondary.pointing.menu .menu {
         display: none;
-      }
-      .secondary.pointing.menu .toc.item {
+    }
+    .secondary.pointing.menu .toc.item {
         display: block;
-      }
-      .masthead.segment {
+    }
+    .masthead.segment {
         min-height: 350px;
-      }
-      .masthead h1.ui.header {
+    }
+    .masthead h1.ui.header {
         font-size: 2em;
         margin-top: 1.5em;
-      }
-      .masthead h2 {
+    }
+    .masthead h2 {
         margin-top: 0.5em;
         font-size: 1.5em;
-      }
-
-      h4.ui.inverted.header{
-        margin-top: 0.2em;
-      }
-
     }
-
-
-
-.four.wide.column
-{
+    h4.ui.inverted.header {
+        margin-top: 0.2em;
+    }
+}
+.four.wide.column {
     position: fixed;
     height: auto;
     width: 100%;
     z-index: 100
 }
-
-.ui.two.column.grid
-{
-  margin-top: 1em;
+.ui.two.column.grid {
+    margin-top: 1em;
 }
-
-.ui.relaxed.divided.list
-{
-  margin: 0.5em;
+.ui.relaxed.divided.list {
+    margin: 0.5em;
 }
-
-
-.ui.inverted.vertical.footer.segment
-{
-  margin-top: 2em;
+.ui.inverted.vertical.footer.segment {
+    margin-top: 2em;
 }

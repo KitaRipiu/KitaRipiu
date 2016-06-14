@@ -24,7 +24,7 @@ function renderView() {
 
 // Render the router layouts
 function renderMainLayoutWith(view) {
-  if(view == '/login'){
+  if(view == 'Login'){
     BlazeLayout.render("LoginLayout");
   } else {
     BlazeLayout.render("PublicLayout", {main : view});
