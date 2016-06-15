@@ -1,3 +1,6 @@
+// Set the default root for Template
+BlazeLayout.setRoot('body');
+
 // Set the route group for public users
 const publicRoute = FlowRouter.group({ name: 'public' });
 
@@ -25,7 +28,7 @@ publicRoute.route('/read/:article',
 // Login route
 publicRoute.route('/login',
   { name: 'Login',      action: renderView });
-  
+
 // 404 Page
 FlowRouter.notFound = {
   action: function(){
