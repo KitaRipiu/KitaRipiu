@@ -1,6 +1,12 @@
 Users = new Mongo.Collection("Users");
 
 Users.allow({
+  insert: () => false,
+  update: () => false,
+  remove: () => false
+});
+
+Users.deny({
   insert: () => true,
   update: () => true,
   remove: () => true

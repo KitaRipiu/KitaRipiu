@@ -1,6 +1,12 @@
 Reviews = new Mongo.Collection("Reviews");
 
 Reviews.allow({
+  insert: () => false,
+  update: () => false,
+  remove: () => false
+});
+
+Reviews.deny({
   insert: () => true,
   update: () => true,
   remove: () => true
@@ -46,7 +52,7 @@ ReviewSchema = new SimpleSchema({
       }
     }
   }
-  
+
 });
 
 Reviews.attachSchema(ReviewSchema);
