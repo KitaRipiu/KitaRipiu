@@ -3,9 +3,30 @@
     <div class="login">
         <div class="ui middle aligned center aligned grid">
             <div class="column login-form">
-                <img src="/resources/logokitaripiu.png">
+                <a href="/"><img src="/resources/logokitaripiu.png"></a>
 
-                {{> LoginForm }}
+                <form class="ui large form" id="login-form" method="post">
+                    <div class="ui stacked segment">
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="email" placeholder="E-mail address">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui left icon input">
+                                <i class="lock icon"></i>
+                                <input type="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <button class="ui fluid large teal submit button" type="submit">Login</button>
+                    </div>
+
+                    <div class="ui error message text-center" id="LoginErrorMessage">
+                        {{ TemplateVar.get "LoginErrorMessage" }}
+                    </div>
+
+                </form>
 
             </div>
         </div>

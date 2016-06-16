@@ -1,6 +1,9 @@
 body {
     position: relative;
 }
+.visible {
+    display: inherit;
+}
 .ui.inverted.header {
     margin-top: 5em;
 }
@@ -40,11 +43,14 @@ body {
 .login-form .image {
     margin-top: -100px;
 }
+.login-form a {
+    display: block;
+}
 .login-form {
     max-width: 450px;
     margin: auto;
 }
-.login-form > img {
+.login-form img {
     margin: auto;
     width: 100%;
 }
@@ -87,6 +93,9 @@ body {
 }
 .notFound-return a {
     font-weight: bold;
+}
+.text-center {
+    text-align: center;
 }
 
 @media only screen and (min-width: 721px) {
