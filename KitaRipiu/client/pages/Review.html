@@ -1,30 +1,24 @@
 <template name="Review">
 	<div class="ui container">
-            <!-- Top-Content-->
-            <div class="ui two column grid">
-                <!-- left content -->
-                <div class="twelve wide column">
+        <!-- Top-Content-->
+        <div class="ui two column grid">
+            <!-- left content -->
+            <div class="twelve wide column">
 
-                	{{> Spesification}}
+                {{> Spesification}}
 
-                    {{> Price}}
-                    
-                </div>
-
-                <!-- /left content -->
-
-                <!-- Right Content -->
-                <div class="four wide column">
-             		{{> RightContent}}
-                </div>
-                <!-- End Right Content -->
-
+                {{> Price}}
+                
             </div>
 
-            <!-- /Top-Content-->
+            <!-- /left content -->
 
-            <!-- BottomContent -->
-            {{> BottomContent}}
-            <!--End BottomContent  -->
+            <!-- Right Content -->
+            <div class="four wide column">
+                {{> RightContent}}
+            </div>
+            <!-- End Right Content -->
         </div>
+        <!-- /Top-Content-->
+    </div>
 </template>
