@@ -36,6 +36,18 @@ adminRoute.route('/AllArticle', {
   action : renderView
 });
 
+adminRoute.route('/EditArticle', {
+  name   : 'EditArticle',
+  action : renderView
+});
+
+adminRoute.route('/EditPhone', {
+  name   : 'EditPhone',
+  action : renderView
+});
+
+
+
 
 
 // Passing router name

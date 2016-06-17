@@ -11,7 +11,7 @@ Template.AdminNavSection.helpers({
 
   AddPhoneStatusRoute : function(){
     let CurrentRoute = FlowRouter.getRouteName();
-    if(CurrentRoute == 'AddPhone' || CurrentRoute == 'AllPhone' ) {
+    if(CurrentRoute == 'AddPhone' || CurrentRoute == 'AllPhone' || CurrentRoute == 'EditPhone' ) {
       return 'active';
     } else {
       return '';
@@ -20,7 +20,7 @@ Template.AdminNavSection.helpers({
 
   AddArticleStatusRoute : function(){
     let CurrentRoute = FlowRouter.getRouteName();
-    if(CurrentRoute == 'AddArticle' || CurrentRoute == 'AllArticle') {
+    if(CurrentRoute == 'AddArticle' || CurrentRoute == 'AllArticle' || CurrentRoute == 'EditArticle') {
       return 'active';
     } else {
       return '';
