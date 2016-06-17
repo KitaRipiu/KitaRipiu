@@ -20,7 +20,7 @@ Template.AdminNavSection.helpers({
 
   AddArticleStatusRoute : function(){
     let CurrentRoute = FlowRouter.getRouteName();
-    if(CurrentRoute == 'AddArticle') {
+    if(CurrentRoute == 'AddArticle' || CurrentRoute == 'AllArticle') {
       return 'active';
     } else {
       return '';

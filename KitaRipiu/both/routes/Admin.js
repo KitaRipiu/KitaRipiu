@@ -31,6 +31,12 @@ adminRoute.route('/AllPhone', {
   action : renderView
 });
 
+adminRoute.route('/AllArticle', {
+  name   : 'AllArticle',
+  action : renderView
+});
+
+
 
 // Passing router name
 function renderView() {
