@@ -1,0 +1,57 @@
+<template name="AddArticle">
+	<!-- content -->
+    <div class="ui container">
+        <div class="ui two column grid">
+            <div class="four wide column">
+                <div class="ui green vertical pointing menu">
+                    <a class="active item" href="">
+                    <i class="plus icon"></i>Add Item
+                    </a>
+                    <a class="item" href="">
+                    <i class="tablet icon"></i>All Item
+                    </a>
+                    <a class="item">
+                    <i class="edit icon"></i>Edit Item
+                    </a>
+                </div>
+            </div>
+
+            <div class="twelve wide column">
+                <div class="ui dividing container">
+                    <h2 class="ui header"><i class="plus icon" style="margin-right: -5px;"></i>
+                    Add new Article</h2>
+                </div>
+                <hr>
+                <div class="ui form" style="width: 50%">
+                    
+
+                    <div class="field">
+                        <label>Judul Artikel</label>
+                        <input placeholder="Nama Produk.." type="text">
+                    </div>
+                </div>
+
+                
+                <div class="ui form" style="margin-top: 1em">
+                    <div class="field">
+                        <label>Description</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div class="field" style="width: 50%;margin-bottom: 1em;">
+                        <label>Select Image</label>
+                        <div class="ui action input">
+                          <input placeholder="Browse Image..." type="text">
+                          <button class="ui button">Browse </button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="ui green button">
+                    Save
+                </button>
+            </div>
+
+        </div>
+    </div>
+</template>

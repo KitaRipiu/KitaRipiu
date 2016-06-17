@@ -16,6 +16,22 @@ adminRoute.route('/account', {
   action : renderView
 });
 
+adminRoute.route('/AddPhone', {
+  name   : 'AddPhone',
+  action : renderView
+});
+
+adminRoute.route('/AddArticle', {
+  name   : 'AddArticle',
+  action : renderView
+});
+
+adminRoute.route('/AllPhone', {
+  name   : 'AllPhone',
+  action : renderView
+});
+
+
 // Passing router name
 function renderView() {
   renderMainLayoutWith(this.name);
