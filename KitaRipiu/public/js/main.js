@@ -39,3 +39,6 @@ $("#showsearch3").click(function () {
         });
 
 $('.ui.embed').embed();
+
+ $('.ui.dropdown')
+  .dropdown();
