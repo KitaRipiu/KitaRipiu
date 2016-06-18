@@ -14,7 +14,7 @@ publicRoute.route('/smartphone', {
 });
 
 // Versus route
-publicRoute.route('/versus', {
+publicRoute.route('/versus/:smartphone', {
   name  : 'Versus',
   action: renderView
 });
