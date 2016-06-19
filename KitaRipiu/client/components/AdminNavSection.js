@@ -26,5 +26,12 @@ Template.AdminNavSection.helpers({
       return '';
     }
   },
-  
+
+});
+
+Template.AdminNavSection.events({
+  'click #signout-button' : ( event ) => {
+    event.preventDefault();
+    Meteor.logout();
+  }
 });

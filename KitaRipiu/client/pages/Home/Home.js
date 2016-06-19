@@ -1,4 +1,4 @@
-Meteor.subscribe("articles");
+Meteor.subscribe("articles", );
 
 Template.Home.helpers({
   articles: () => {

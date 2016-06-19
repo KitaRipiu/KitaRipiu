@@ -32,20 +32,22 @@
 
 <template name="AdminLayout">
 
+	{{#if roleStatus 'admin' }}
+
 		<!-- Navigation Bar Section
-		============================ -->
+			============================ -->
 		{{> AdminNavSection }}
 
 		<!-- This is the main layout to load every pages dinamically
-		============================ -->
+			============================ -->
 		<main class="main-layout">
 			{{> Template.dynamic template=main }}
 		</main>
 
 		<!-- Footer Section
-		============================ -->
-		{{> FooterSection }}
+			============================ -->
+		{{> FooterSection }}{{> Modal}}
 
-	{{> Modal}}
+	{{ /if }}
 
 </template>

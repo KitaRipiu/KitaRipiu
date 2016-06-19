@@ -4,13 +4,24 @@
         <div class="ui two column grid">
             <!-- left content -->
             <div class="twelve wide column">
-            	{{> HeadlineNews}}
-            	{{> ContentNews}}
+
+                {{ #each article }}
+
+                <div class="ui main text container">
+                    <h1 class="ui header">{{ articleTitle }}</h1>
+                    <p>{{ updated }}</p>
+                    <img src="/news/news.jpg" class="ui fluid image">
+                </div>
+                <div class="ui text container" id="isi-artikel">
+                    {{ articleBody }}
+                </div>
+
+                {{ /each }}
 
             </div>
             <!-- end left content -->
-            
-            <!-- right content -->              
+
+            <!-- right content -->
             <div class="four wide column">
                 {{> RightContent}}
             </div>
@@ -19,11 +30,11 @@
 
             <!-- BottomContent -->
             <div class="ui stripe vertical segment"></div>
-            
+
             <!-- End BottomContent -->
 
             <!-- End Right Content -->
         </div>
-        <!-- /Top-Content-->           
+        <!-- /Top-Content-->
     </div>
 </template>

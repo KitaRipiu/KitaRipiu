@@ -1,9 +1,16 @@
-// if (Meteor.users.find({
-//         email: 'admin@kitaripiu.com'
-//     }).count() === 0) {
-//     Accounts.createUser(userObject, function() {
-//         username: 'admin',
-//         email: 'admin@kitaripiu.com',
-//         password: 'admin123'
-//     });
-// }
+if (Meteor.users.findOne({
+        "emails": [{
+            "address": "admin@kitaripiu.com",
+            "verified": false
+        }]
+    }) == null) {
+
+
+    let id = Accounts.createUser({
+        email: 'admin@kitaripiu.com',
+        password: 'admin123'
+    });
+
+    Roles.addUsersToRoles(id, ['admin'], 'default-group');
+
+}
