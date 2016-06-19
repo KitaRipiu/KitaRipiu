@@ -11,7 +11,11 @@ Template.AddArticle.helpers({
 });
 
 Template.AddArticle.events({
-  "click form": function(event, template){
+  "submit form": function(event, template){
+
+    let judulArtikel      = event.target.judul.value;
+    let deskripsiArtikel  = event.target.deskripsi.value;
+     
 
   }
 });

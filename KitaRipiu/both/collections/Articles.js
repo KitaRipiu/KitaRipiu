@@ -1,26 +1,13 @@
-Articles = new Mongo.Collection("Articles");
+articles = new Mongo.Collection("articles");
 
-Articles.allow({
-  insert: () => false,
-  update: () => false,
-  remove: () => false
-});
+articleschema = new SimpleSchema({
 
-Articles.deny({
-  insert: () => true,
-  update: () => true,
-  remove: () => true
-});
-
-ArticleSchema = new SimpleSchema({
-
-  _id : {
-    type  : String,
-    label : 'Article ID'
-  },
   userId : {
     type  : String,
-    label : 'Author'
+    label : 'Author',
+    autoValue : () => {
+      return this.userId
+    }
   },
   articleTitle : {
     type  : String,
@@ -34,19 +21,29 @@ ArticleSchema = new SimpleSchema({
     type  : Date,
     label : 'Date Created',
     autoValue : () => {
-      if( this.isInsert ) {
-        return new Date;
-      }
+      return new Date();
     }
   },
   updated : {
     type  : Date,
     label : 'Date Updated',
     autoValue : () => {
-      if( this.isInsert ) {
-        return new Date;
-      }
+      return new Date();
     }
   }
 
+});
+
+articles.attachSchema( articleschema );
+
+articles.allow({
+  insert: () => false,
+  update: () => false,
+  remove: () => false
+});
+
+articles.deny({
+  insert: () => true,
+  update: () => true,
+  remove: () => true
 });

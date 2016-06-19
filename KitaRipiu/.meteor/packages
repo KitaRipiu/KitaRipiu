@@ -28,3 +28,6 @@ accounts-password
 aldeed:collection2
 frozeman:template-var
 alanning:roles
+tomi:upload-server
+tomi:upload-jquery
+insecure

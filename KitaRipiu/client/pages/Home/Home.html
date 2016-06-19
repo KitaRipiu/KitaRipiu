@@ -1,0 +1,45 @@
+<template name="Home">
+    <div class="ui container">
+        <!-- Top-Content-->
+        <div class="ui two column grid">
+            <!-- left content -->
+            <div class="twelve wide column">
+                <h2 class="ui header">News</h2>
+                <div class="ui three column doubling stackable grid">
+
+                {{ #each articles }}
+                    <div class="column">
+                        <div class="ui card">
+                            <div class="ui slide masked reveal image">
+                                <img src="/products/mi5.jpg" class="visible content">
+                                <img src="/products/mi5_2.jpg" class="hidden content">
+                            </div>
+                            <div class="content">
+                                <a class="header" href="news/{{ _id }}">{{ articleTitle }}</a>
+                                <div class="meta">
+                                    <span class="date">{{ created }}</span>
+                                </div>
+                                <div class="description">
+                                    {{ articleBody }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                {{ /each }}
+
+                </div>
+            </div>
+
+            <!-- /left content -->
+
+            <!-- Right Content -->
+            <div class="four wide column">
+                {{> RightContent}}
+            </div>
+            <!-- /Right Content -->
+        </div>
+        <!-- /Top-Content-->
+    </div>
+    <div class="ui stripe vertical segment"></div>
+</template>
