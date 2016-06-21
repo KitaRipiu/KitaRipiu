@@ -3,6 +3,14 @@ Meteor.subscribe("articles");
 Template.News.helpers({
   article: function(){
     let articleId = FlowRouter.getParam('id');
-    return articles.find({_id: articleId});
+
+    if(articles.find({_id: articleId}).count() === 0){
+      FlowRouter.go('/404');
+    }
+    else {
+      return articles.find({_id: articleId});
+    }
+
+
   }
 });

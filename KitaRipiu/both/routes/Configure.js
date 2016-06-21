@@ -4,3 +4,9 @@ FlowRouter.notFound = {
     BlazeLayout.render("NotFound");
   }
 };
+
+FlowRouter.route('/404', {
+  action: () => {
+    BlazeLayout.render("NotFound");
+  }
+});
