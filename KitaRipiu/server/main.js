@@ -6,4 +6,8 @@ Meteor.startup(() => {
     return articles.find();
   });
 
+  Meteor.publish("reviews", () => {
+    return reviews.find();
+  });
+
 });

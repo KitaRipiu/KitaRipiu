@@ -1,7 +1,7 @@
 Meteor.subscribe("articles");
 
 Template.News.helpers({
-  article: function(){
+  article: () => {
     let articleId = FlowRouter.getParam('id');
 
     if(articles.find({_id: articleId}).count() === 0){
