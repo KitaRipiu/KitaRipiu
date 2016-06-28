@@ -1,13 +1,15 @@
-# KitaRipiu
-Smartphones review and comparison
+=============================
+	ReadMe.md
+=============================
 
-## What we use in this project
-```
-> MeteorJS
-> BlazeLayout
-> Flow-Router
-> Semantic-UI with LESS
-> MongoDB
-> Amazon API
-> Youtube API
-```
+1. Instalasi
+	*Install Node JS
+	*Install Meteor : curl https://install.meteor.com/ | sh
+	*Clone Repository
+	*Checkout branch develop : git checkout develop
+	*jalankan npm install
+	
+2. Menjalankan Aplikasi
+	*jalankan perintah "meteor" untuk Run aplikasi.
+	*Buka Localhost:3000
+
