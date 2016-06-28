@@ -14,19 +14,19 @@ publicRoute.route('/smartphone', {
 });
 
 // Versus route
-publicRoute.route('/versus', {
+publicRoute.route('/versus/:smartphone', {
   name  : 'Versus',
   action: renderView
 });
 
 // Review route
-publicRoute.route('/review', {
+publicRoute.route('/review/:id', {
   name  : 'Review',
   action: renderView
 });
 
 // News route
-publicRoute.route('/news', {
+publicRoute.route('/news/:id', {
   name  : 'News',
   action: renderView
 });

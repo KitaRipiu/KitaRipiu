@@ -1,10 +1,7 @@
-$('.menu .item')
-  .tab()
-;
-
 $(document)
     .ready(function() {
 
+      $('.menu .item').tab();
       // fix menu when passed
       $('.masthead')
         .visibility({
