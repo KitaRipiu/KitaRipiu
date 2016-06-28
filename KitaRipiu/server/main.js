@@ -10,4 +10,9 @@ Meteor.startup(() => {
     return reviews.find();
   });
 
+  YoutubeApi.authenticate({
+    type: 'key',
+    key: 'AIzaSyAdcXOCyeqQKd7gH5qibdFTSrKeb4u5OKY '
+  });
+
 });
