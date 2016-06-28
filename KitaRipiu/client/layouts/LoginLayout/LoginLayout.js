@@ -1,17 +1,11 @@
 Template.LoginLayout.helpers({
-
-    create: function() {
-    },
     // Get the form instance once the template loaded
-    rendered: function() {
+    rendered: () => {
         LoginLayout({
             form: '#login-form',
             template: Template.instance()
         });
-    },
-    destroyed: function() {
-
-    },
+    }
 });
 
 // Catch the event when form has been submitted

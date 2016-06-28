@@ -1,110 +1,113 @@
-<template name = "AddPhone">
-	<!-- content -->
+<template name="AddPhone">
+    <!-- content -->
     <div class="ui container">
         <div class="ui two column grid">
             <div class="four wide column">
                 <div class="ui green vertical pointing menu">
                     <a class="active item" href="/admin/AddPhone">
-                    <i class="plus icon"></i>Add Item
+                        <i class="plus icon"></i>Add Item
                     </a>
                     <a class="item" href="/admin/AllPhone">
-                    <i class="tablet icon"></i>All Item
+                        <i class="tablet icon"></i>All Item
                     </a>
                     <a class="item" href="/admin/EditPhone">
-                    <i class="edit icon"></i>Edit Item
+                        <i class="edit icon"></i>Edit Item
                     </a>
                 </div>
             </div>
 
             <div class="twelve wide column">
-                <div class="ui dividing container">
-                    <h2 class="ui header"><i class="plus icon" style="margin-right: -5px;"></i>
+                <form>
+                    <div class="ui dividing container">
+                        <h2 class="ui header"><i class="plus icon" style="margin-right: -5px;"></i>
                     Add new Smartphone</h2>
-                </div>
-                <hr>
-                <div class="ui form" style="width: 50%">
-                    <div class="field">
-                        <label>Merk Hp</label>
-                        <select class="ui dropdown">
-                          <option value="">Phone</option>
-                          <option value="0">Iphone</option>
-                          <option value="1">Samsung</option>
-		                  <option value="2">Xiaomi</option>
-                        </select>
+                    </div>
+                    <hr>
+                    <div class="ui form" style="width: 50%">
+
+                        <div class="field">
+                            <label>Merk Hp</label>
+                            <select class="ui dropdown" name="merk">
+                                <option value="">Phone</option>
+                                <option value="0">Iphone</option>
+                                <option value="1">Samsung</option>
+                                <option value="2">Xiaomi</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label>Nama Produk</label>
+                            <input placeholder="Nama Produk.." type="text" name="nama">
+                        </div>
+                    </div>
+                    <div class="ui form" style="margin-top: 1em">
+                        <label><b>Youtube</b></label>
+                        <div class="four fields">
+                            <div class="field">
+                                <input placeholder="Keyword.." type="text" name="keyword" id="search-keyword">
+                            </div>
+                            <div class="field">
+                                <select class="ui dropdown" name="result" id="search-result">
+                                    <option value="">Result</option>
+                                    <option value=1>1</option>
+                                    <option value=2>2</option>
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <select class="ui dropdown" name="judul" id="search-judul">
+                                    <option value="">Judul Youtube</option>
+                                    <option value="id">Review Samsung S7</option>
+                                    <option value="id">Review Samsung S7 edge</option>
+                                    <option value="id">Uboxing Samsung S7</option>
+                                    <option value="id">Uboxing Samsung S7</option>
+                                    <option value="id">Uboxing Samsung S7</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="field">
-                        <label>Nama Produk</label>
-                        <input placeholder="Nama Produk.." type="text">
-                    </div>
-                </div>
-		        <div class="ui form" style="margin-top: 1em">
-                    <label><b>Youtube</b></label>
-                    <div class="four fields">
-                        <div class="field">
-                            <input placeholder="Keyword.." type="text">
+                    <div class="ui form" style="margin-top: 1em">
+                        <label>Body</label>
+                        <div class="four fields">
+                            <div class="field">
+                                <input placeholder="Size.." type="text" name="size">
+                            </div>
+                            <div class="field">
+                                <input placeholder="Weight.." type="text" name="weight">
+                            </div>
+                            <div class="field">
+                                <input placeholder="Color.." type="text" name="color">
+                            </div>
+                            <div class="field">
+                                <input placeholder="Height.." type="text" name="height">
+                            </div>
                         </div>
-	           	        <div class="field">
-                            <select class="ui dropdown">
-                                <option value="">Result</option>
-                                <option value="id">1</option>
-                                <option value="id">2</option>
-                                <option value="id">3</option>
-                                <option value="id">4</option>
-                                <option value="id">5</option>
-                        </select>
-	            	   </div>
-	           	<div class="field">
-	            	    <select class="ui dropdown">
-	                  	<option value="">Judul Youtube</option>
-				<option value="id">Review Samsung S7</option>
-	                  	<option value="id">Review Samsung S7 edge</option>
-				<option value="id">Uboxing Samsung S7</option>
-				<option value="id">Uboxing Samsung S7</option>
-				<option value="id">Uboxing Samsung S7</option>
-	             	   </select>
-	            	</div>
-                    </div>
-                </div>
-
-                <div class="ui form" style="margin-top: 1em">
-                    <label>Body</label>
-                    <div class="four fields">
-                        <div class="field">
-                            <input placeholder="Size.." type="text">
-                        </div>
-                        <div class="field">
-                            <input placeholder="Weight.." type="text">
-                        </div>
-                        <div class="field">
-                            <input placeholder="color.." type="text">
-                        </div>
-                        <div class="field">
-                            <input placeholder="odor.." type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="ui form" style="margin-top: 1em">
-                    <div class="field">
-                        <label>Description</label>
-                        <textarea></textarea>
                     </div>
 
-                    <div class="field" style="width: 50%;margin-bottom: 1em;">
-                        <label>Select Image</label>
-                        <div class="ui action input">
-                          <input placeholder="Browse Image..." type="text">
-                          <button class="ui button">Browse </button>
+                    <div class="ui form" style="margin-top: 1em">
+                        <div class="field">
+                            <label>Description</label>
+                            <textarea name="description"></textarea>
+                        </div>
+
+                        <div class="field" style="width: 50%;margin-bottom: 1em;">
+                            <label>Select Image</label>
+                            <div class="ui action input">
+                                <input placeholder="Browse Image..." type="text">
+                                <button class="ui button">Browse </button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <button class="ui green button">
-                    Save
-                </button>
+                    <button class="ui green button" type="submit">
+                        Save
+                    </button>
+                </form>
             </div>
 
         </div>
-    </div>	
+    </div>
 </template>
