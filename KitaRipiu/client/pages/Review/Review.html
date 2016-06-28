@@ -60,11 +60,10 @@
                   <i class="film icon"></i>
                   Video
                 </h4>
-
                 <div class="ui container vertical masthead center aligned segment">
-                    <div class="ui embed" data-url="https://www.youtube.com/embed/pfdu_gTry8E" data-placeholder="/resources/logokitaripiu.png "></div>
-
+                    <div id="player"></div>
                 </div>
+
                 <!--End Video -->
                 <!-- /Specification -->
 
@@ -141,9 +140,13 @@
             <!-- Right Content -->
             <div class="four wide column">
                 {{> RightContent}}
+
             </div>
             <!-- End Right Content -->
         </div>
         <!-- /Top-Content-->
     </div>
+
+    <script type="text/javascript" src="/js/IframeAPI.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 </template>
