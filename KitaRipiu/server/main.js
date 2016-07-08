@@ -10,9 +10,16 @@ Meteor.startup(() => {
     return reviews.find();
   });
 
+  Meteor.publish("videosList", () => {
+    return videos.find();
+  })
+
   YoutubeApi.authenticate({
     type: 'key',
     key: 'AIzaSyAdcXOCyeqQKd7gH5qibdFTSrKeb4u5OKY '
   });
+
+  
+
 
 });
